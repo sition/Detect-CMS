@@ -21,8 +21,6 @@ class DetectCMS {
     'Shoptet',
     'Webgarden',
     'Webnode',
-    "Moodle",
-    "Modx"
   );
 
 	private $common_methods = array("generator_header","generator_meta");
@@ -117,8 +115,10 @@ class DetectCMS {
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 		curl_setopt($ch, CURLOPT_TIMEOUT, 30);
+        // Added http header
+        curl_setopt($ch, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
 
-		$return = curl_exec($ch);
+        $return = curl_exec($ch);
 
 		$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
@@ -144,8 +144,10 @@ class DetectCMS {
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 		curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 		curl_setopt($ch, CURLOPT_HEADER, 1);
+        // Added http header
+        curl_setopt($ch, CURLOPT_USERAGENT,'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
 
-		$response = curl_exec($ch);
+        $response = curl_exec($ch);
 
 		$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 
