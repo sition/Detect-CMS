@@ -1,12 +1,6 @@
 {
     "name":"kasperstuck/Detect-CMS",
     "type":"library",
-    "authors": [
-        {
-            "name": "yangqi",
-            "email": "i@yangqi.me"
-        }
-    ],
     "autoload":{
         "psr-0":{
             "DetectCMS":"src/"
