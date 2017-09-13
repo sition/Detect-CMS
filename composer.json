@@ -1,5 +1,5 @@
 {
-    "name":"kasperstuck/Detect-CMS",
+    "name":"kasperstuck/detectcms",
     "type":"library",
     "autoload":{
         "psr-0":{
