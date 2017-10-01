@@ -18,7 +18,7 @@ class Shopware extends \DetectCMS\DetectCMS {
   }
 
 	/**
-	 * See if CHANGELOG.TXT exists, and check for Drupal
+	 * See if bootstrap.js exists, and check for Shopware
 	 * @return [boolean]
 	 */
 	public function changelog() {
