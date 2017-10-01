@@ -1,5 +1,5 @@
 {
-    "name":"sition/detectcms",
+    "name":"Detect-CMS",
     "type":"library",
     "autoload":{
         "psr-0":{
