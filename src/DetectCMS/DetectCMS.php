@@ -21,7 +21,8 @@ class DetectCMS {
     'Shoptet',
     'Webgarden',
     'Webnode',
-     'Shopware',
+     'Shopware4',
+     'Shopware5',
      'Magento2'
   );
 
