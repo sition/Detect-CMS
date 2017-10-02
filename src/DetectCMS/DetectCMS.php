@@ -21,6 +21,8 @@ class DetectCMS {
     'Shoptet',
     'Webgarden',
     'Webnode',
+     'Shopware',
+     'Magento2'
   );
 
 	private $common_methods = array("generator_header","generator_meta");
